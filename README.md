@@ -10,9 +10,11 @@ This repository implements a **Bayesian Deep Learning (BDL)** pipeline in JAX an
 * **Temporal Drift Mitigation:** Numeric features are scaled relative to annual market averages prior to min-max normalization:
   $$X_{i,t}^{\text{scaled}} = \frac{X_{i,t}}{\bar{X}_t}$$
   This keeps multi-year features on a shared relative manifold across changing market conditions.
-* **Last-Layer Laplace (LL-Laplace):** Instead of sampling across dense weight spaces—which causes predictive drift in deep non-linear networks—the model freezes MAP hidden representations ($\mathbf{\Phi}$) and analytically evaluates the closed-form posterior over the output layer:
+* **Last-Layer Laplace (LL-Laplace):** Instead of sampling across dense weight spaces—which causes predictive drift in deep non-linear networks—the model freezes MAP hidden representations ($\mathbf{\Phi}$) and analytically evaluates the closed-form posterior over the output layer.
 
-    $$\mathbf{\Sigma}_{\text{last}} = \left( \frac{\mathbf{\Phi}^T \mathbf{\Phi}}{\sigma_{\text{obs}}^2} + \lambda \mathbf{I} \right)^{-1}$$
+<br>
+
+$$\mathbf{\Sigma}_{\text{last}} = \left( \frac{\mathbf{\Phi}^T \mathbf{\Phi}}{\sigma_{\text{obs}}^2} + \lambda \mathbf{I} \right)^{-1}$$
 * **Uncertainty Quantification:** Computes closed-form epistemic variance and exports 89% High-Density Intervals (HDI) formatted for `ArviZ`:
   $$\sigma_{\text{epistemic}}^2(x) = \boldsymbol{\phi}(x)^T \mathbf{\Sigma}_{\text{last}} \boldsymbol{\phi}(x)$$
 * **Model Interpretability:**
