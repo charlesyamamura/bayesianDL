@@ -23,6 +23,18 @@ $$\mathbf{\Sigma}_{\text{last}} = \left( \frac{\mathbf{\Phi}^T \mathbf{\Phi}}{\s
   * **Partial Dependence Plots (PDPs):** Maps marginal feature effects across the market spectrum with shaded 90% Bayesian confidence bands.
 
 ---
+### **Dataset & Features**
+
+The model is evaluated on a historical dataset covering the small SUV segment in the Brazilian automotive market from March 2013 to December 2019:
+
+* **Scope & Volume:** 1,563 monthly observations across 22 distinct small SUV models sourced from the National Federation of Vehicle Distributors (FENABRAVE).
+* **Target Variable:** Monthly market share, chosen to eliminate seasonal overall market volume fluctuations.
+* **Product Features:** 16 attributes normalized on a 1–5 Likert scale ($x_j \in \{1, 2, 3, 4, 5\}$), combining quantitative specs and subjective consumer/expert assessments (*Quatro Rodas*, *UOL Carros*, Weber 2009):
+  * **Performance & Safety:** Price, fuel economy, performance, agility, safety.
+  * **Comfort & Equipment:** Style, space, trunk volume, comfort, convenience, interior finish, equipment, infotainment.
+  * **Dynamic & Perceptual:** Brand strength, robustness, and novelty (decaying by 1 point per year post-launch).
+
+---
 
 ### **Performance Metrics**
 
