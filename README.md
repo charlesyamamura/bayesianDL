@@ -56,6 +56,35 @@ Evaluated on an out-of-time test split (Training: $t \le 2018$, Test: $t = 2019$
 
 ---
 
+### **Feature Sensitivity Analysis**
+
+Gradient-based sensitivity analysis ($\mathbb{E} \left[ \left| \frac{\partial \hat{y}}{\partial x_j} \right| \right]$) evaluates the global influence of each product attribute on predicted market share.
+
+#### **Key Driver Rankings**
+
+| Rank | Feature | Importance ($\%$) | Mean Absolute Gradient |
+| :---: | :--- | :---: | :---: |
+| 1 | **Infotainment** | $9.81\%$ | $0.1979$ |
+| 2 | **Safety** | $8.93\%$ | $0.1802$ |
+| 3 | **Comfort** | $8.64\%$ | $0.1744$ |
+| 4 | **Space** | $8.51\%$ | $0.1716$ |
+| 5 | **Features** | $7.65\%$ | $0.1543$ |
+| 6 | **Novelty** | $6.68\%$ | $0.1348$ |
+| 7 | **Price** | $6.41\%$ | $0.1293$ |
+| 8 | **Style** | $6.30\%$ | $0.1270$ |
+| 9 | **Trunk** | $5.96\%$ | $0.1203$ |
+| 10 | **Ruggedness** | $5.65\%$ | $0.1140$ |
+
+---
+
+#### **Managerial Insights**
+
+* **Dominance of In-Cabin Experience & Safety:** The top four drivers—**Infotainment ($9.81\%$)**, **Safety ($8.93\%$)**, **Comfort ($8.64\%$)**, and **Space ($8.51\%$)**—collectively account for over $35\%$ of total market share variance. This indicates that small SUV buyers in Brazil prioritize tech integration, safety features, and interior ergonomics over basic utility.
+* **Secondary Role of Direct Pricing:** **Price ($6.41\%$)** ranks 7th in overall importance. While price remains a baseline constraint, purchasing decisions in this segment are driven predominantly by perceived feature density and product value rather than low cost alone.
+* **Lifecycle & Refresh Strategy:** **Novelty ($6.68\%$)** and overall **Features ($7.65\%$)** outperform physical styling ($6.30\%$) and trunk capacity ($5.96\%$), suggesting that tech refreshes and trim upgrades are highly effective for sustaining market share over a vehicle's life cycle.
+
+---
+
 ### **Outputs Generated**
 
 1. `performance_and_uncertainty.png`: Actual vs. predicted market share and out-of-sample HDI uncertainty error bars.
