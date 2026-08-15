@@ -30,8 +30,8 @@ Evaluated on an out-of-time test split (Training: $t \le 2018$, Test: $t = 2019$
 | **Train ($t \le 2018$)** | **0.906** | **0.239** | **0.158** |
 | **Test ($t = 2019$)** | **0.798** | **0.373** | **0.280** |
 
----
 ![Performance and Uncertainty](bayesian_dl_r2.png)
+---
 
 ### **Tech Stack**
 
