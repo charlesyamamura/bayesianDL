@@ -1,6 +1,6 @@
 # Bayesian Deep Learning for New Product Demand Forecasting
 
-This repository implements a **Bayesian Deep Learning (BDL)** pipeline in JAX and Equinox to forecast automotive market share while providing calibrated epistemic uncertainty bounds. Designed specifically for tabular market data subject to temporal drift, the model leverages a **Last-Layer Laplace Approximation (LL-Laplace)** to combine deep feature extraction with robust Bayesian inference.
+This repository implements a **Bayesian Deep Learning (BDL)** pipeline in JAX and Equinox to forecast new automotive product market demand while providing calibrated epistemic uncertainty bounds. Designed specifically for tabular market data subject to temporal drift, the model leverages a **Last-Layer Laplace Approximation (LL-Laplace)** to combine deep feature extraction with robust Bayesian inference.
 
 ---
 
