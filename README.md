@@ -29,7 +29,7 @@ The model is evaluated on a historical dataset covering the small SUV segment in
 
 * **Scope & Volume:** 942 monthly observations across 22 distinct small SUV models sourced from the National Federation of Vehicle Distributors (FENABRAVE).
 * **Target Variable:** Monthly market share, chosen to eliminate seasonal overall market volume fluctuations.
-* **Product Features:** 16 attributes normalized on a 1–5 Likert scale ($x_j \in \{1, 2, 3, 4, 5\}$), combining quantitative specs and subjective consumer/expert assessments (*Quatro Rodas*, *UOL Carros*, Weber 2009):
+* **Product Features:** 16 attributes normalized on a 1–5 Likert scale ($x_j \in \{1, 2, 3, 4, 5\}$), combining quantitative specs and subjective consumer/expert assessments, extracted from surveys and reports in specialized publications and websites (*Quatro Rodas*, *UOL Carros*, Weber 2009):
   * **Performance & Safety:** Price, fuel economy, performance, agility, safety.
   * **Comfort & Equipment:** Style, space, trunk volume, comfort, convenience, interior finish, equipment, infotainment.
   * **Dynamic & Perceptual:** Brand strength, robustness, and novelty (decaying by 1 point per year post-launch).
